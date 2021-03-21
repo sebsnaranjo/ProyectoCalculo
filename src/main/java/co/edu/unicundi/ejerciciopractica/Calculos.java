@@ -9,9 +9,6 @@ package co.edu.unicundi.ejerciciopractica;
  *
  * @author PC
  */
-public class Principal {
+public class Calculos {
     
-    public static void main() {
-        System.out.println("Hola mundo...");
-    }
 }
