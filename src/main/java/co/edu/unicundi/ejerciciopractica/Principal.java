@@ -11,4 +11,9 @@ package co.edu.unicundi.ejerciciopractica;
  */
 public class Principal {
     
+    public static void main() {
+        
+    }
+    
+    
 }
