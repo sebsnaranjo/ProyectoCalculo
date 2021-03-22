@@ -15,13 +15,13 @@ public class Triangulo extends Figura {
 
 
     @Override
-    public double area() {
-       return 0;
+    public void area() {
+      
     }
 
     @Override
-    public double perimetro() {
-       return 0;
+    public void perimetro() {
+     
     }
     
 }

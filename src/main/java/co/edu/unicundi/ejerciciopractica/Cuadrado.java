@@ -13,32 +13,49 @@ import java.util.Scanner;
  */
 public class Cuadrado extends Figura{
 
-    Scanner ladoT = new Scanner(System.in); 
+    static Scanner ladoT = new Scanner(System.in); 
     private double areaCuadrado;
-    public float l;
-   
-    public Cuadrado(double lado) 
-    {
-        System.out.println("Ingrese el lado del cuadrado: ");
-        l= ladoT.nextFloat();
-        this.l= l;
+    private double perimetroCuadrado;
+   private float l;
+    public void tomaDatos(){
+         System.out.println("Ingrese el lado del cuadrado: ");
+         l= ladoT.nextFloat();
+         this.l = l;
+         System.out.println(l);
+    }
+  
+     public float getL() {
+        return l;
     }
 
-    Cuadrado() {
-       
+    public void setL(float l) {
+        this.l = l;
+    }
+  
+    @Override
+    public void area() {
+        
+        this.areaCuadrado = l*l;
+        System.out.println("El area es: " + this.areaCuadrado);
     }
     
-    @Override
-    public double area() {
-        return l* l;
-    }
-
-    @Override
-    public double perimetro() {
+        public double getareaCuadrado() 
+    {
+        return areaCuadrado;
+    }  
         
-        return l+l+l+l;
+    @Override
+    public void perimetro() {
+       
+        this.perimetroCuadrado =l*4;
+         System.out.println("El perimetro: " + this.perimetroCuadrado);
+        
         
     }
+       public double getPerimetroCuadrado() 
+    {
+        return perimetroCuadrado;
+    }  
     
     
 }

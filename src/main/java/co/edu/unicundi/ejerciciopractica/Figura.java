@@ -12,11 +12,8 @@ package co.edu.unicundi.ejerciciopractica;
   
 public abstract class Figura implements IObtenerDatos{
 
-   
         private double area;
         private double perimetro;
-        
-   
 
     public double getArea() {
         return area;
@@ -34,19 +31,7 @@ public abstract class Figura implements IObtenerDatos{
         this.perimetro = perimetro;
     }
   
-    public void metodoCalcularArea(){
-        
-        Cuadrado cuadrado = new Cuadrado();
-        System.out.println("El area de su cuadrado es:"+ cuadrado.getArea());
-        
-        
-    }
-    public void metodoCalcularPerimetro(){
-        
-        Cuadrado cuadrado = new Cuadrado();
-        System.out.println("El perimetro de su cuadrado es:"+ cuadrado.getArea());
-        
-    }
+  
     
     
 }

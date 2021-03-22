@@ -25,13 +25,17 @@ public class Principal {
         
          for (IObtenerDatos fig : vectorFigura) {     
             Figura fff;
+          
+            fff = ((Figura) fig);
+           
+          
+              if(fig instanceof Cuadrado) {
+                ((Cuadrado) fig).tomaDatos();
+               
+                
+            }
             fig.area();
             fig.perimetro();
-            fff = ((Figura) fig);
-            fff.metodoCalcularArea();
-            fff.metodoCalcularPerimetro();
-            
-           
         }
         
     }
