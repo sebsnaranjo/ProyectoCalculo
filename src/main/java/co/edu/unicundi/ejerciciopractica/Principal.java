@@ -33,6 +33,8 @@ public class Principal {
                 ((Cuadrado) fig).tomaDatos(); 
             }else if (fig instanceof Triangulo) {
                 ((Triangulo) fig).tomaDatos();
+            }else if (fig instanceof Circulo) {
+                ((Circulo) fig).tomaDatos();
             }
             fig.area();
             fig.perimetro();
