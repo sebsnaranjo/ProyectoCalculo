@@ -11,7 +11,7 @@ package co.edu.unicundi.ejerciciopractica;
  */
 public interface IObtenerDatos {
     
-    void area();
-    void perimetro();
+    double area();
+    double perimetro();
     
 }

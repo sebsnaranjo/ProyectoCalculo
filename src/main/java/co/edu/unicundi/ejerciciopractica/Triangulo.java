@@ -13,14 +13,15 @@ public class Triangulo extends Figura {
 
 
 
+
     @Override
-    public void area() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double area() {
+       return 0;
     }
 
     @Override
-    public void perimetro() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public double perimetro() {
+       return 0;
     }
     
 }
