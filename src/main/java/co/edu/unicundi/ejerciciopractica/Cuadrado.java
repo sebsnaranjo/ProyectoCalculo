@@ -7,14 +7,19 @@ package co.edu.unicundi.ejerciciopractica;
 
 /**
  *
- * @author PC
+ * @author ASUS
  */
-public class Principal {
-    
-    public static void main() {
-        System.out.println("Hola mundo...");
-        System.out.println("Hola mundo...");
-        System.out.println("Hola mundo...");
-       
+public class Cuadrado extends Figura{
+
+
+    @Override
+    public void area() {
     }
+
+    @Override
+    public void perimetro() {
+        
+    }
+    
+    
 }
