@@ -16,21 +16,26 @@ public class Cuadrado extends Figura{
     static Scanner ladoT = new Scanner(System.in); 
     private double areaCuadrado;
     private double perimetroCuadrado;
-   private float l;
+    private float l;
+    
     public void tomaDatos(){
          System.out.println("Ingrese el lado del cuadrado: ");
          l= ladoT.nextFloat();
          this.l = l;
-         System.out.println(l);
     }
   
-     public float getL() {
+    public float getL() {
         return l;
     }
 
     public void setL(float l) {
         this.l = l;
     }
+    
+    public double getareaCuadrado() 
+    {
+        return areaCuadrado;
+    }  
   
     @Override
     public void area() {
@@ -39,23 +44,14 @@ public class Cuadrado extends Figura{
         System.out.println("El area es: " + this.areaCuadrado);
     }
     
-        public double getareaCuadrado() 
-    {
-        return areaCuadrado;
-    }  
-        
     @Override
     public void perimetro() {
-       
         this.perimetroCuadrado =l*4;
          System.out.println("El perimetro: " + this.perimetroCuadrado);
-        
-        
     }
        public double getPerimetroCuadrado() 
     {
         return perimetroCuadrado;
     }  
-    
-    
+      
 }

@@ -30,9 +30,9 @@ public class Principal {
            
           
               if(fig instanceof Cuadrado) {
-                ((Cuadrado) fig).tomaDatos();
-               
-                
+                ((Cuadrado) fig).tomaDatos(); 
+            }else if (fig instanceof Triangulo) {
+                ((Triangulo) fig).tomaDatos();
             }
             fig.area();
             fig.perimetro();
