@@ -11,25 +11,22 @@ package co.edu.unicundi.ejerciciopractica;
  */
 public class Principal {
     public static void main(String[] args) {
-        
+        /**
+        * Llamamos los metodos para luego mostrar cada uno de sus operaciones
+        */
         IObtenerDatos circulo = new Circulo();
         IObtenerDatos cuadrado = new Cuadrado();
         IObtenerDatos triangulo= new Triangulo();
         
-        
-       IObtenerDatos[] vectorFigura = new IObtenerDatos[3];     
+        IObtenerDatos[] vectorFigura = new IObtenerDatos[3];     
         vectorFigura[0] = circulo;
         vectorFigura[1] = cuadrado;
         vectorFigura[2] = triangulo;
-        
-        
+       
          for (IObtenerDatos fig : vectorFigura) {     
             Figura fff;
-          
             fff = ((Figura) fig);
-           
-          
-              if(fig instanceof Cuadrado) {
+            if(fig instanceof Cuadrado) {
                 ((Cuadrado) fig).tomaDatos(); 
             }else if (fig instanceof Triangulo) {
                 ((Triangulo) fig).tomaDatos();
@@ -39,7 +36,5 @@ public class Principal {
             fig.area();
             fig.perimetro();
         }
-        
-    }
-    
+    } 
 }

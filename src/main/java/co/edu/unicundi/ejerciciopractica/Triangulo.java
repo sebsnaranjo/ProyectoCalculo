@@ -12,7 +12,9 @@ import java.util.Scanner;
  * @author ASUS
  */
 public class Triangulo extends Figura {
-
+    /**
+    * Variables declaradas
+    */
     static Scanner ladoT = new Scanner(System.in); 
     private double areaTriangulo;
     private double perimetroTriangulo;
@@ -20,7 +22,9 @@ public class Triangulo extends Figura {
     private float ladoUno;
     private float ladoDos;
     private float ladoTres;
-    
+    /**
+    * Metodo que se encarga de recibir los datos
+    */
     public void tomaDatos(){
          System.out.println("Ingrese el primer lado del triangulo: ");
          ladoUno = ladoT.nextFloat();
@@ -32,7 +36,9 @@ public class Triangulo extends Figura {
          this.ladoDos = ladoDos;
          this.ladoTres = ladoTres;
     }
-  
+    /**
+    * Metodos get y set
+    */
     public float getLadoUno() {
         return ladoUno;
     }
@@ -50,7 +56,9 @@ public class Triangulo extends Figura {
         this.ladoDos = ladoDos;
         this.ladoTres = ladoTres;
     }
-
+    /**
+    * Metodos que se encargan de calcular y mostrar las operaciones
+    */
     @Override
     public void perimetro() {
         this.perimetroTriangulo=ladoUno+ladoDos+ladoTres;

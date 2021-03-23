@@ -12,19 +12,25 @@ import java.util.Scanner;
  * @author ASUS
  */
 public class Circulo extends Figura{
-     static Scanner radio = new Scanner(System.in);
-     private float r;
-     private double perimetroCirculo;
-     private double areaCirculo;
-     static final double pi = 3.1415;
-     
-
-  public void tomaDatos(){
-      
-      System.out.println("Ingrese el radio de el circulo: ");
-      r = radio.nextFloat();
-      this.r = r;
-  }
+    /**
+    * Variables declaradas
+    */
+    static Scanner radio = new Scanner(System.in);
+    private float r;
+    private double perimetroCirculo;
+    private double areaCirculo;
+    static final double pi = 3.1415;
+    /**
+    * Metodo que se encarga de recibir los datos
+    */
+    public void tomaDatos(){
+        System.out.println("Ingrese el radio de el circulo: ");
+        r = radio.nextFloat();
+        this.r = r;
+    }
+    /**
+    * Metodos get y set
+    */
     public float getR() {
         return r;
     }
@@ -32,11 +38,13 @@ public class Circulo extends Figura{
     public void setR(float r) {
         this.r = r;
     }
+    /**
+    * Metodos que se encargan de calcular y mostrar las operaciones
+    */
     @Override
     public void area() {
         this.areaCirculo = pi*r*r;
          System.out.println("El area del circulo es: " + this.areaCirculo);
-        
     }
     
     @Override

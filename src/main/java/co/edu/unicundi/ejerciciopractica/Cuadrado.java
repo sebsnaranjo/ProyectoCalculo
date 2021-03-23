@@ -12,18 +12,24 @@ import java.util.Scanner;
  * @author ASUS
  */
 public class Cuadrado extends Figura{
-
+    /**
+    * Variables declaradas
+    */
     static Scanner ladoT = new Scanner(System.in); 
     private double areaCuadrado;
     private double perimetroCuadrado;
     private float l;
-    
+    /**
+    * Metodo que se encarga de recibir los datos
+    */
     public void tomaDatos(){
          System.out.println("Ingrese el lado del cuadrado: ");
          l= ladoT.nextFloat();
          this.l = l;
     }
-  
+    /**
+    * Metodos get y set
+    */
     public float getL() {
         return l;
     }
@@ -36,7 +42,9 @@ public class Cuadrado extends Figura{
     {
         return areaCuadrado;
     }  
-  
+    /**
+    * Metodos que se encargan de calcular y mostrar las operaciones
+    */
     @Override
     public void area() {
         
