@@ -6,8 +6,11 @@
 package co.edu.unicundi.ejerciciopractica;
 
 /**
- *
- * @author PC
+ * Clase padre con metodo abstracto
+ * @author Sebastian Naranjo
+ * @author Ana Sofia Lopera
+ * @since 1.0
+ * @version 1.0
  */
 public abstract class Figura implements IObtenerDatos{
         private double area;

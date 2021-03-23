@@ -4,10 +4,12 @@
  * and open the template in the editor.
  */
 package co.edu.unicundi.ejerciciopractica;
-
 /**
- *
- * @author ASUS
+ * Clase que se encarga de ejecutar los metodos e implementa polimorfismo
+ * @author Sebastian Naranjo
+ * @author Ana Sofia Lopera
+ * @since 1.0
+ * @version 1.0
  */
 public class Principal {
     public static void main(String[] args) {

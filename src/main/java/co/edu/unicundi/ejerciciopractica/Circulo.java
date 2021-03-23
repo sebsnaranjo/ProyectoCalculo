@@ -8,8 +8,11 @@ package co.edu.unicundi.ejerciciopractica;
 import java.util.Scanner;
 
 /**
- *
- * @author ASUS
+ * Clase que calcula el area y perimetro de un circulo
+ * @author Sebastian Naranjo
+ * @author Ana Sofia Lopera
+ * @since 1.0
+ * @version 1.0
  */
 public class Circulo extends Figura{
     /**

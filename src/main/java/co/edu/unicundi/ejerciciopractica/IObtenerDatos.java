@@ -6,8 +6,11 @@
 package co.edu.unicundi.ejerciciopractica;
 
 /**
- *
- * @author ASUS
+ * Interfaz
+ * @author Sebastian Naranjo
+ * @author Ana Sofia Lopera
+ * @since 1.0
+ * @version 1.0
  */
 public interface IObtenerDatos {
     
